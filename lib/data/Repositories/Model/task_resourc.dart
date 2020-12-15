@@ -24,7 +24,7 @@ class TaskResource{
      
   }*/
   Map<String, dynamic> toJason(){
-    return _$TaskResourseToJson(this);
+    return _$TaskResourceToJson(this);
    /* return {
       id : this.id,
       createat:  this.createat,
@@ -43,8 +43,8 @@ class TaskResource{
     );
      return taskResourse;
   }*/
-  static TaskResourse fromJason(Map<String, dynamic> jsonMap){
-      return _$TaskResourseFromJson(jsonMap);
+  static TaskResource fromJason(Map<String, dynamic> jsonMap){
+      return _$TaskResourceFromJson(jsonMap);
 
       /*
       this.id = jsonMap['id'];

@@ -8,7 +8,7 @@ import 'package:http/http.dart' as http;
 void main() {
   test("serialize test", () async {
     //setup
-    var taskResource = TaskResource(
+    /*var taskResource = TaskResource(
         id: "1",
         title: "Chico-Plus",
         description: "Test 1",
@@ -16,7 +16,7 @@ void main() {
         sexo: "F",
         user: "Evandro");
     //act
-    var json = taskResource.toJson();
+    var json = taskResource.toJason();
     print("Json: $jsonEncode(json)");
     //assert
     expect(json['id'], taskResource.id);
@@ -28,15 +28,15 @@ void main() {
       //act
       var jsonMap = jsonDecode(json);
 
-      var taskResource = TaskResource().fromJson(jsonMap);
+      //var taskResource = TaskResource().fromJason(jsonMap);
       //assert
-      expect(taskResource.id, jsonMap['id']);
+      //expect(taskResource.id, jsonMap['id']);
   });
   test("get all visits with all success", () {
     //setup
 
     //act
 
-    //assert
+    //assert*/
   });
 }
