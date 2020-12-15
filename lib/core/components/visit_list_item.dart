@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:helloworld/core/colors.dart';
-
+   
+   
 class VisitListItem extends StatelessWidget {
   final int image;
   const VisitListItem({this.image, key}) : super(key: key);
